@@ -22,7 +22,7 @@ pipeline {
       stage('Push the artifacts into Jfrog artifactory') {
             steps {
               rtUpload (
-                serverId: 'Jfrog-dev-server',
+                serverId: 'jfrog-dev-server',
                 spec: '''{
                       "files": [
                         {
